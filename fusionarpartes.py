@@ -2,7 +2,7 @@ import os
 
 def unir_video():
     # Lista de las rutas de las 10 partes del video
-    partes = [f"partes_video/parte_{i+1}.mp4" for i in range(10)]
+    partes = [f"MURDER DRONES - Episode 3/parte_{i+1}.mp4" for i in range(10)]
     
     # Crear un archivo de texto con las rutas de las partes del video
     with open("video_lista.txt", "w") as file:
@@ -18,6 +18,7 @@ def unir_video():
     
     # Eliminar el archivo de texto temporal
     os.remove("video_lista.txt")
+    os.remove("video_unido.mp4")
 
 # Ejecutar la función para unir el video
 unir_video()
